@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>topHotel</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="index.html" id="logo">
+        </a>
+    </div>
+    <nav class="main">
+        <ul>
+            <li><a href="#">Про готель</a>
+                <ul>
+                    <li><a href="#">TopHotel</a></li>
+                    <li><a href="html/gallery.html">Фотогалерея</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="#">Номери</a>
+                <ul>
+                    <li><a href="#">Тарифи</a></li>
+                    <li><a href="#">Стандарт</a></li>
+                    <li><a href="#">Напівлюкс</a></li>
+                    <li><a href="#">Люкс</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="#">Послуги</a>
+                <ul>
+                    <li><a href="#">SPA-центр</a></li>
+                    <li><a href="#">Басейн</a></li>
+                    <li><a href="#">Салон краси</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="html/contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<footer>
+    <section class="bookingform">
+        <form>
+            <div class="bron">
+                <b>ЗАБРОНЮВАТИ НОМЕР</b>
+            </div>
+            <div>
+            <span>
+                <i>Заїзд:</i>
+                <input type="date" name="ckeckin" id="arrival" value="2017-07-12" class="hasDatepicker">
+            </span>
+            </div>
+            <div>
+            <span>
+                <i>Виїзд:</i>
+                <input type="date" name="ckeckout" id="departure" value="2017-07-15" class="hasDatepicker">
+            </span>
+            </div>
+            <div class="submitbtn">
+                <input type="submit" class="submit" value="ПЕРЕВІРИТИ НАЯВНІСТЬ">
+            </div>
+        </form>
+    </section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
