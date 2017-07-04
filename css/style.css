@@ -13,7 +13,7 @@ body {
     font-size: .9em;
     color: #67533E;
     line-height: 150%;
-    background-color: #FFF;
+    background-color: palegoldenrod;
     text-align: center;
     box-sizing: border-box;
 }
@@ -229,8 +229,13 @@ footer {
     height: 89px;
     width: 300px;
     margin: 0 auto;
-    background: url(../img/top.gif) center center no-repeat;
+   /* background: url(../img/top.gif) center center no-repeat;*/
     display: inline-block;
+    text-decoration: none;
+    font-size: 3em;
+    text-align: center;
+    padding: 30px;
+    color: black;
 }
 
 #googleMap{
@@ -240,3 +245,8 @@ footer {
     margin-bottom: 30px;
     margin-top: 10px;
 }
+
+#maincontent{
+    overflow-x: auto;
+}
+

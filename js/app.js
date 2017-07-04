@@ -8,6 +8,10 @@ function initialize() {
     var map = new google.maps.Map(html_element, mapProp);
 
     var point = new google.maps.LatLng(50.464379,30.519131);
+    var contentString = '<b>' +'Top Hotel Kyiv' + '</b>';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
 
     var marker = new google.maps.Marker({
         position: point,
@@ -15,6 +19,9 @@ function initialize() {
         map:  map
     });
 
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 

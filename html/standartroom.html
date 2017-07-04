@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>topHotel</title>
 </head>
 <body>
+<header>
+    <div class="header">
+        <a href="../index.html" id="logo">
+            <b>Top Hotel</b>
+        </a>
+    </div>
+    <nav class="main">
+        <ul>
+            <li><a href="about.html">Про готель</a>
+                <ul>
+                    <li><a href="about.html">TopHotel</a></li>
+                    <li><a href="gallery.html">Фотогалерея</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="#">Номери</a>
+                <ul>
+                    <li><a href="taryfy.html">Тарифи</a></li>
+                    <li><a href="standartroom.html">Стандарт</a></li>
+                    <li><a href="halfpremroom.html">Напівлюкс</a></li>
+                    <li><a href="premiumroom.html">Люкс</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="#">Послуги</a>
+                <ul>
+                    <li><a href="spa.html">SPA-центр</a></li>
+                    <li><a href="pool.html">Басейн</a></li>
+                    <li><a href="salonkrasy.html">Салон краси</a></li>
+                </ul>
+            </li>
+            |
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="maincontent"></div>
+<div id="gallery">
 
+</div>
+
+<footer>
+    <section class="bookingform">
+        <form>
+            <div class="bron">
+                <b>ЗАБРОНЮВАТИ НОМЕР</b>
+            </div>
+            <div>
+            <span>
+                <i>Заїзд:</i>
+                <input type="date" name="ckeckin" id="arrival" value="2017-07-12" class="hasDatepicker">
+            </span>
+            </div>
+            <div>
+            <span>
+                <i>Виїзд:</i>
+                <input type="date" name="ckeckout" id="departure" value="2017-07-15" class="hasDatepicker">
+            </span>
+            </div>
+            <div class="submitbtn">
+                <input type="submit" class="submit" value="ПЕРЕВІРИТИ НАЯВНІСТЬ">
+            </div>
+        </form>
+    </section>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>
