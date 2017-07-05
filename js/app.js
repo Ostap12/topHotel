@@ -4,7 +4,9 @@ var main = function () {
         autoplay: true,
         autoplaySpeed: 2000,
         cssEase: 'ease-in',
-        slidesToShow: 4,
+        centerMode: true,
+        centerPadding: '70px',
+        slidesToShow: 3,
        asNavFor: '.gallery2'
     });
 

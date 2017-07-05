@@ -1,6 +1,6 @@
-/** {*/
-    /*box-sizing: border-box;*/
-/*}*/
+* {
+    box-sizing: border-box;
+}
 
 img {
 	max-width: 100%;
@@ -14,8 +14,12 @@ body {
     color: #67533E;
     line-height: 150%;
     background-color: palegoldenrod;
-    text-align: center;
+    /*text-align: center;*/
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
 }
 
 nav.main {
@@ -140,7 +144,7 @@ nav.main ul li ul li ul {
 footer {
     height: 55px;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     left: 0;
     z-index: 5;
@@ -154,6 +158,7 @@ footer {
     height: 32px;
     font-size: .9em;
     line-height: 28px;
+
 }
 
 .bookingform b {
@@ -178,6 +183,8 @@ footer {
     border: #695437 1px solid;
     text-align: left;
     padding: 0 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bookingform div span i {
@@ -248,7 +255,10 @@ footer {
 }
 
 #maincontent{
-    overflow-x: auto;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    z-index: auto;
 }
 .social a {
     display: inline-block;
@@ -259,7 +269,8 @@ footer {
 
 .slider1{
     position: relative;
-    margin: 0;
+    margin: 0 7px;
+    outline: none;
 }
 .gallery2{
     margin: 40px 0 0;
@@ -278,6 +289,67 @@ footer {
 
 .slider2 img:hover, .slick-current img{
     background: #fff;
+}
+
+table{
+    border: 1px solid black;
+    text-align: center;
+    margin: 30px;
+}
+ul{
+    list-style: none;
+}
+
+.room1{
+    float: left;
+    width: 100%;
+    padding: 0 8px;
+    margin: 5px 0 0 0;
+    background: #EEEEEE;
+    text-align: center;
+    /*border: 1px solid #695437;*/
+}
+.room1:hover{
+    opacity: 0.7;
+}
+
+@media (min-width: 601px) {
+    .room1 {
+        width: 33.33333%;
+    }
+}
+
+.ok{
+    height: 30px;
+    background: #695437;
+    padding: 0 20px;
+    color: #FFF;
+    border: none;
+    font-size: .9em;
+    margin-top: -3px;
+    border: #695437 1px solid;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 0;
+    margin-bottom: 4px;
+}
+
+.ok a{
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.ok:hover, .ok a:hover {
+    color: #695437;
+    background: #FFF;
+    border-color: #695437;
+
+}
+
+#room{
+    overflow-y: auto;
 }
 
 
