@@ -1,4 +1,3 @@
-
 var main = function () {
     $('.gallery1').slick({
         autoplay: true,
@@ -7,7 +6,7 @@ var main = function () {
         centerMode: true,
         centerPadding: '70px',
         slidesToShow: 3,
-       asNavFor: '.gallery2'
+        asNavFor: '.gallery2'
     });
 
     $('.gallery2').slick({
@@ -26,7 +25,19 @@ var main = function () {
             }
 
         }]
-    })
+    });
+    $('.content').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        cssEase: 'ease-in',
+        arrows: false,
+        dots: true,
+        pauseOnFocus: false,
+        pauseOnHover: false
+    });
+
+
 };
 
 $(document).ready(main);

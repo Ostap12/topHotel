@@ -28,6 +28,8 @@ nav.main {
     display: block;
     font-size: .95em;
     text-transform: uppercase;
+    margin-top: -15px;
+    z-index: 3;
 }
 
 nav.main ul {
@@ -144,7 +146,7 @@ nav.main ul li ul li ul {
 footer {
     height: 55px;
     width: 100%;
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 5;
@@ -183,7 +185,7 @@ footer {
     border: #695437 1px solid;
     text-align: left;
     padding: 0 0px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-bottom: 10px;
 }
 
@@ -224,9 +226,9 @@ footer {
     color: #695437;
 }
 
+
 .header {
-    height: 80px;
-    /*background: gainsboro;*/
+    height: 90px;
     position: relative;
     text-align: center;
     overflow: visible;
@@ -260,7 +262,7 @@ footer {
     padding-bottom: 10px;
     z-index: auto;
 }
-.social a {
+.social {
     display: inline-block;
     transition: .3s;
     float: left;
@@ -350,6 +352,37 @@ ul{
 
 #room{
     overflow-y: auto;
+}
+
+.rooms{
+    text-decoration: none;
+    outline: none;
+    color: #695437;
+}
+
+a{
+    outline: none;
+}
+
+.content{
+    /*margin-top: 2px;*/
+}
+
+.description{
+    padding: 20px;
+    padding-top: 0;
+    text-align: center;
+    color: black;
+
+}
+
+.about{
+    background-color: lightgray;
+}
+
+.colw{
+    padding: 20px;
+    font-size: 17px;
 }
 
 
