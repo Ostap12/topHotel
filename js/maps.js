@@ -7,7 +7,7 @@ function initialize() {
     var map = new google.maps.Map(html_element, mapProp);
 
     var point = new google.maps.LatLng(50.464379,30.519131);
-    var contentString = '<b>' +'Top Hotel Kyiv' + '</b>';
+    var contentString = '<b>' +'Top Hotel Kyiv' + '</b>' + '<br/>' + 'вул. Спаська, 10';
     var infowindow = new google.maps.InfoWindow({
         content: contentString
     });

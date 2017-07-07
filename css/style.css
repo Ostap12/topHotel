@@ -334,6 +334,7 @@ ul{
     border-radius: 30px;
     margin-left: 0;
     margin-bottom: 4px;
+    outline: none;
 }
 
 .ok a{
@@ -383,6 +384,15 @@ a{
 .colw{
     padding: 20px;
     font-size: 17px;
+}
+
+.choose{
+    float: right;
+    font-size: 20px;
+}
+
+.fa{
+    font-size: 20px;
 }
 
 

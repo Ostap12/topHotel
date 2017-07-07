@@ -1,3 +1,4 @@
+
 var main = function () {
     $('.gallery1').slick({
         autoplay: true,
