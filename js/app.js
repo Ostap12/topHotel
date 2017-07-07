@@ -1,5 +1,7 @@
 
 var main = function () {
+
+
     $('.gallery1').slick({
         autoplay: true,
         autoplaySpeed: 2000,
@@ -29,7 +31,7 @@ var main = function () {
     });
     $('.content').slick({
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         speed: 1000,
         cssEase: 'ease-in',
         arrows: false,
@@ -37,6 +39,7 @@ var main = function () {
         pauseOnFocus: false,
         pauseOnHover: false
     });
+
 
 
 };
