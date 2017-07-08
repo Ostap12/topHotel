@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>topHotel</title>
 </head>
 <body>
@@ -62,10 +63,45 @@
             </p>
 
             <br/>
-            <button class="choose ok">Забронювати</button>
+            <button class="choose ok " id="book">Забронювати</button>
             <br/>
         </div>
+        <div id="dialog-form" title="Забронювати">
+            <p class="validateTips">Заповніть всі поля.</p>
 
+            <form>
+                <fieldset>
+                    <label>Ім'я</label>
+                    <input type="text" name="name" id="name" placeholder="Остап Вороняк"
+                           class="text ui-widget-content ui-corner-all">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email" placeholder="ostap@tophotel.com"
+                           class="text ui-widget-content ui-corner-all">
+                    <label>Телефон</label>
+                    <input type="text" name="phone" id="phone" placeholder="063xxxxxxx"
+                           class="text ui-widget-content ui-corner-all">
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div id="users-contain" class="ui-widget" style="text-align: center; float: right; margin-right: 20%;">
+            <h2>Заброньовано номер:</h2>
+            <table id="users" class="ui-widget ui-widget-content">
+                <thead>
+                <tr class="ui-widget-header ">
+                    <th>Ім'я</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 <div id="gallery">
@@ -100,6 +136,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="../js/popup.js"></script>
 <script src="../js/app.js"></script>
 </body>

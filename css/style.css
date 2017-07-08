@@ -526,5 +526,75 @@ a {
 
 }
 
+label, input {
+    display: block;
+}
+
+input.text {
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+
+div#users-contain {
+    width: 350px;
+    margin: 20px 0;
+}
+
+div#users-contain table {
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div#users-contain table td, div#users-contain table th {
+    border: 1px solid #eee;
+    padding: .6em 10px;
+    text-align: left;
+}
+
+.ui-dialog .ui-state-error {
+    padding: .3em;
+}
+
+.validateTips {
+    border: 1px solid transparent;
+    padding: 0.3em;
+}
+
+#book {
+    height: 30px;
+    background: #695437;
+    padding: 0 20px;
+    color: #FFF;
+    border: none;
+    margin-top: -3px;
+    border: #695437 1px solid;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 0;
+    margin-bottom: 4px;
+    outline: none;
+    font-size: 20px;
+}
+
+
+#book:hover {
+    color: #695437;
+    background: #FFF;
+    border-color: #695437;
+
+}
+
+.ui-dialog-titlebar {
+    background-color: #67533E;
+}
 
 
