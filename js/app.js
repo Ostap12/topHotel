@@ -48,7 +48,7 @@ var main = function () {
             valid = valid && checkLength(email, "email", 6, 80);
             valid = valid && checkLength(phone, "phone", 10, 10);
 
-            valid = valid && checkRegexp(name, /^[a-z]([0-9a-z_\s])+$/i, "Мінімальна довжина імені - 3 символи");
+            valid = valid && checkRegexp(name, /^[a-zа-я]([0-9a-zа-я_\s])+$/i, "Мінімальна довжина імені - 3 символи");
             valid = valid && checkRegexp(email, emailRegex, "приклад: ostap@tophotel.com");
             valid = valid && checkRegexp(phone, /^([0-9])+$/, "Тільки цифри");
 
@@ -59,6 +59,7 @@ var main = function () {
                     "</tr>");
                 dialog.dialog("close");
             }
+            alert("Успішно заброньовано");
             return valid;
         }
 
